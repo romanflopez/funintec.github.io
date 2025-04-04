@@ -39,13 +39,14 @@
   
   /* Estilos para los enlaces del menú */
   .overlay-menu ul li a {
-    color: #fff;
-    font-size: 24px;
+    color: #fff !important;
+    font-size: 26px;
     text-decoration: none;
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.95;
   }
   
   /* Chevron (chevron fino) para items con submenú */
@@ -71,7 +72,6 @@
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease;
-    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco */
     margin: 0;
     padding: 0 10px; /* Solo padding horizontal cuando está cerrado */
   }
@@ -80,7 +80,6 @@
   .overlay-menu ul li.has-submenu.open .submenu {
     max-height: 500px; /* Ajusta este valor según el contenido real */
     opacity: 1;
-    margin-top: 10px;
     padding: 10px;
   }
   
@@ -340,3 +339,11 @@
     }
   }
   
+
+
+  .font-normal{
+    font-weight: normal !important;
+  }
+  .font-bold{
+    font-weight: bold !important;
+  }
